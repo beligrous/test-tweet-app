@@ -2,6 +2,7 @@
   "name": "tweets-app-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://beligrous.github.io/test-tweet-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -41,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.10",
     "@types/react-router-dom": "^5.3.3"
   }
 }
