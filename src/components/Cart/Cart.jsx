@@ -16,7 +16,9 @@ import {
 
 const Cart = ({ user }) => {
   const { follow, addFollow, removeFollow } = useFollow();
-  const isFollowCart = follow.some((item) => item.id === user.id) || false;
+  const isFollowCart = follow
+    ? follow.some((item) => item.id === user.id)
+    : false;
   const [isFollow, setIsFollow] = useState(isFollowCart);
   const [followers, setFollowers] = useState(user.followers);
 
