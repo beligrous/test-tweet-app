@@ -6,7 +6,7 @@ export const useFollow = () => useContext(followContext);
 
 export const FollowProvider = ({ children }) => {
   const [follow, setFollow] = useState(() =>
-    JSON.parse(localStorage.getItem("follow") || [])
+    JSON.parse(localStorage.getItem("follow"))
   );
   let array = [];
 
