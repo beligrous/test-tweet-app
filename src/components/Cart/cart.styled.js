@@ -83,21 +83,9 @@ export const Ring = styled.div`
 
 export const Avatar = styled.img`
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 62px;
   object-fit: cover;
   object-position: center;
-`;
-
-export const Name = styled.p`
-  position: absolute;
-  color: #ebd8ff;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 24px;
-  left: 50%;
-  top: 80px;
-  transform: translateX(-50%);
 `;
 
 export const Info = styled.p`

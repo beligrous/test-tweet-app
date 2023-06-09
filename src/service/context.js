@@ -11,13 +11,13 @@ export const FollowProvider = ({ children }) => {
   let array = [];
 
   const addFollow = (data) => {
-    array = [...follow, data];
+    array = follow ? [...follow, data] : [data];
     setFollow(array);
     localStorage.setItem("follow", JSON.stringify(array));
   };
 
   const removeFollow = (data) => {
-    array = follow.filter((item) => item.id !== data.id);
+    array = follow ? follow.filter((item) => item.id !== data.id) : [];
     setFollow(array);
     localStorage.setItem("follow", JSON.stringify(array));
   };

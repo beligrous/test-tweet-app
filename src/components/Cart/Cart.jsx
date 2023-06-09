@@ -7,7 +7,6 @@ import {
   CartContainer,
   Image,
   LogoImage,
-  Name,
   Line,
   Info,
   Button,
@@ -53,7 +52,6 @@ const Cart = ({ user }) => {
 
   return (
     <CartContainer>
-      <Name>{user.user}</Name>
       <LogoImage />
       <Image />
       <Line>
