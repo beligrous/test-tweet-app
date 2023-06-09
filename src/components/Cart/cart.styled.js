@@ -59,7 +59,6 @@ export const Button = styled.button`
   cursor: pointer;
   &:hover {
     box-shadow: none;
-    border: 1px solid #373737;
   }
 `;
 

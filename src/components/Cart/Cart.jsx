@@ -38,14 +38,7 @@ const Cart = ({ user }) => {
   };
 
   const numberPrettier = (num) => {
-    let result;
-    if (num < 1000) {
-      result = num;
-    } else {
-      result = num.toString().split("");
-      result.splice(-3, 0, ",");
-    }
-    return result;
+    return num.toLocaleString();
   };
 
   return (
