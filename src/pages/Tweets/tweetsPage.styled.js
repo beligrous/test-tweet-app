@@ -13,7 +13,8 @@ export const Container = styled.div`
   background-repeat: repeat-y;
 `;
 
-export const ListContainer = styled.div`
+export const ListContainer = styled.ul`
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;

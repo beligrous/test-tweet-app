@@ -1,5 +1,5 @@
 import { PropTypes } from "prop-types";
-import { Circle, Ring, Avatar } from "./cart.styled";
+import { Circle, Ring, Avatar } from "./avatar.styled";
 
 const AvatarRing = ({ src }) => {
   return (

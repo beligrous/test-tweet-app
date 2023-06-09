@@ -5,9 +5,7 @@ import { useFollow } from "../../service/context";
 import AvatarRing from "./Avatar";
 import {
   CartContainer,
-  Image,
   LogoImage,
-  Line,
   Info,
   Button,
   InfoWrap,
@@ -53,10 +51,7 @@ const Cart = ({ user }) => {
   return (
     <CartContainer>
       <LogoImage />
-      <Image />
-      <Line>
-        <AvatarRing src={user.avatar} />
-      </Line>
+      <AvatarRing src={user.avatar} />
       <InfoWrap>
         <Info>{numberPrettier(user.tweets)} tweets</Info>
         <Info>{numberPrettier(followers)} followers</Info>
